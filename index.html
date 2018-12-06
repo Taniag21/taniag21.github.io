@@ -104,7 +104,7 @@
   
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default" onClick="alert('Thank you')">Submit</button></div>
+        <button type="submit" class="btn btn-default" onClick="alert('Thank you')"">Submit</button></div>
       </div>
   
 
@@ -115,7 +115,7 @@
 
         <div class="modal-footer">
           <button id ="submit" button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>  </div>
+        </div>  </div>  </div>
       </div></div>
               </div>
           </div>
@@ -394,20 +394,95 @@ Showing staff what to do, supervising staff, checking quality of work, working t
                   </tr>
                 </tbody>
 						     </table>
+    
+              <div class="col-md-12" align="right"><img src="img/libo.jpeg" style="background: lightgrey;" width="150px" height="150px" float:right;/></div>
+
+  
+ <div class="col-md-12"> 
+
+     <i>2013-2014</i>
+<h4>Liberties College	</h4>							
+QQI Level 5 Computer Systems and Networks<br>
+Cisco Certified
+
+			     <table class="table table-hover">
+                   <thead>
+                      <tr>
+                        <th> Year</th> <th>Breakdown</th>
+                </thead>
+                <tbody>
+                  
+            <tr>      <td> One </td> <td><button onclick="myFunctionOne()">Modules</button>
+ 
+      <div id="one" style="display:none">
+
+      <div class="table-responsive">
+        <table class ="table">
+          <thead>
+              <tr><th>Modules Studied</th>
+              <th>Grades</th>
+              </tr>
+          </thead>
+
+       <tbody>  
+            <tr>
+              <td>Web Authoring</td>
+              <td>Distinction</td>
+          </tr>
+          
+          <tr>
+              <td>Internet</td>
+              <td>Distinction</td>
+           </tr>
+
+            <tr>
+                <td>Networking Essentials</td>
+                <td>Distinction</td>
+            </tr>
+
+            <tr>
+                <td>Work Experience</td>
+                <td>Distinction</td>
+            </tr>
+
+            <tr>
+                <td>Computer Programming</td>
+                <td>Merit</td>
+            </tr>
+
+            <tr>
+                <td>Communications</td>
+                <td>Merit</td>
+             </tr>
+
+              <tr>
+                <td> Introduction to Networks</td>
+                <td>Merit</td>
+             </tr>
+
+              <tr>
+                <td>Computer Architecture</td>
+                <td>Merit</td>
+             </tr>
+
+           
+
+  </tbody>
+  </table>
+</div>
+</div></td>
+                  </tr>
+                </tbody>
+						     </table>
                  
 
-
-    
-  
+      </div>
 
 
-    
-      
-</div> 
-</div>      
+</div>   
 </div>
-</div>
-</div>
+</div></div></div>
+
 
       <div class="container">
           <div class="row">
@@ -498,6 +573,15 @@ function myFunction2() {
 
 function myFunction1() {
     var x = document.getElementById("first");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myFunctionOne() {
+    var x = document.getElementById("one");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
