@@ -73,17 +73,54 @@
             <i class="material-icons">&#xe8c5;</i>0851234567 	<br>
           <i class="material-icons">&#xe890;</i>taniagriffin12@hotmail.com <br>
          
-<i class="material-icons">&#xe8a6;</i> <a href="https://www.linkedin.com/in/taniagriffin" target="_blank"> Linkedin</a>
-        </div>
+<i class="material-icons">&#xe8a6;</i> <a href="https://www.linkedin.com/in/taniagriffin" target="_blank"> Linkedin</a><br><br><br>
+       
+       
+       
+        <form class="form-horizontal" action="" method="post>
+   
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+      </div>
+    </div>
+   
+   <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+   
+   
+   <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Message:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="msg" placeholder="Enter message" name="message">
+      </div>
+    </div>
+  
+  
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default" onClick="alert('Thank you')">Submit</button></div>
+      </div>
+  
+
+        </form>
+       
+       
+      
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+          <button id ="submit" button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>  </div>
+      </div></div>
               </div>
           </div>
             </div>
-                            
+                 </div>             
             </div>
           </div>
         </div>
@@ -380,7 +417,13 @@ Showing staff what to do, supervising staff, checking quality of work, working t
 
 
     <h2>Projects</h2> 
- 
+    <i>Scope: </i>
+        <p>I am currently working on an iOS application for my 4th year project. The app is called LuzePrize. The app is to raffle prizes. Any user can sign up and host a raffle selling any number of tickets at any cost. Once they are all sold the winner will be chosen at random and both winner & seller will be notified.</p>
+    <br><i>Technologies & Tools Used: </i><p>Xamarin, C#, Azure, JS.</p><br>
+       
+       <button id="expand-btn" button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Show More</button>
+  <div id="demo" class="collapse">
+       
        <i>Scope: </i>
                   <p>Group project with 5 other interns on a website for SAP that can enable users to create quizzes for fellow colleagues to take The quiz master creates a quiz and receives a code, this code is then entered by the person taking the quiz. The user can view their score and wrong answers at the end. The quiz master can view analytics on each quiz.</p>           
                   <br>
@@ -392,7 +435,7 @@ Showing staff what to do, supervising staff, checking quality of work, working t
                   <i>Technologies & Tools Used: </i><p>Play framework, java, html, css and sql.</p>
              </div>
     
-
+              </div>
   </div>
 </div>
 
@@ -478,6 +521,17 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+$('#expand-btn').click(function(){
+  if ($('#expand-btn').attr('aria-expanded') === "true") 
+  {
+    $('#expand-btn').html('Show More');
+  }
+  else
+  {
+    $('#expand-btn').html('Show Less');   
+  }
+})
 </script>
 </body>
 </html>

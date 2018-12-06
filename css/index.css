@@ -36,11 +36,16 @@ img {
   background-color: #d7a8ea;
 }
 
+.btn:active{
+  background: lightgrey;
+}
+
 .btn:hover{
     color: #ce7df0;
     background-color: #d7a8ea;
     border-color: #fff; /*set the color you want here*/
 }
+
 
 .navbar {
   background-color: #d7a8ea;
