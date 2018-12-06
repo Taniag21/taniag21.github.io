@@ -73,7 +73,7 @@
             <i class="material-icons">&#xe8c5;</i>0851234567 	<br>
           <i class="material-icons">&#xe890;</i>taniagriffin12@hotmail.com <br>
          
-<i class="material-icons">&#xe8a6;</i> <a href="www.linkedin.com/in/taniagriffin" target="_blank"> Linkedin</a>
+<i class="material-icons">&#xe8a6;</i> <a href="https://www.linkedin.com/in/taniagriffin" target="_blank"> Linkedin</a>
         </div>
 
         <div class="modal-footer">
@@ -104,7 +104,7 @@
         </div>
       </div>
   </div>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <div class="container">
        <div class="row">
@@ -137,6 +137,8 @@ Showing staff what to do, supervising staff, checking quality of work, working t
             <div class="col-md-12">
               <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
               <h2>Education</h2>
+           
+              <div class="col-md-12" align="right"><img src="img/itt.jpg" style="background: lightgrey;" width="150px" height="150px" float:right;/></div>
              <br> <i>2015 – To date</i>
               <h4>Institute of Technology Tallaght</h4>
   
@@ -147,8 +149,8 @@ Showing staff what to do, supervising staff, checking quality of work, working t
                         <th> Year</th>  <th>GPA</th><th>Breakdown</th>
                 </thead>
                 <tbody>
-                  <tr>
-                  <td> Third        </td>				<td>2.54</td><td> <button onclick="myFunction()">Modules</button>
+                  <tr><td>Fourth</td><td> Pending</td><td>  </td></tr>
+            <tr>      <td> Third        </td>				<td>2.54</td><td> <button onclick="myFunction()">Modules</button>
       <div id="third" style="display:none">
 
       <div class="table-responsive" >
@@ -460,6 +462,22 @@ function myFunction1() {
     }
 }
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 </script>
 </body>
 </html>
