@@ -7,27 +7,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
  
+ <!--nav bar that stays at the top when scrolling-->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
       
+       <!--make nav bar collapsable for smaller devices-->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
 
             <li class="nav-item">
+             <!--different tabs on nav bar jumps to the sections on the page as its only one page bar references-->
               <a class="nav-link" href="#about">About</a>
            </li>
            <li class="nav-item">
@@ -48,6 +51,7 @@
           <li class="nav-item">
                 <a class="nav-link" href="references.html">References</a>
             </li>
+             <!--search bar that searches google uses function gsitesearch script is at the end of file-->
        <li>  <div class="search-container">
             <form class="form-inline" action="https://www.google.com/search"
             method="GET" target="_blank" onsubmit="Gsitesearch(this)">
@@ -62,9 +66,6 @@
             type="submit" target="_blank"><i class="fa fa-search"></i></button>
             
             </form>
-            
-
-          
 
 
   </div></li>
@@ -80,91 +81,90 @@
                   <br>    <h2> Tania Griffin</h2> 
             </div>
   
-       
-
-     <div class="row">
-        <div class="col-md-6" id="grey" align="center">  
-            
-                <img src="img/profile.jpg" style="background: lightgrey;" width="300px"/>
-            </div>
-        <div class="col-md-6" id="grey"> 
-
+        <!--when about is clicked in nav it brings up this section by id-->
           <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
-             <h2>About</h2>
-                <p align="left"> 4th year ICT Student at IT Tallaght. Have successfully completed many projects as an individual and as part of teams. Have experience developing and as a support engineer. I am currently looking for a graduate position in development for 2019 on completion of my Degree.</p>
-       
+                <div class="container">
 
-
-         
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact</button>
-
-        <!-- Modal -->
-          <div class="modal fade" id="myModal" role="dialog">
-              <div class="modal-dialog">
-    
-                <!-- Modal content-->
-                  <div class="modal-content">
-                   <div class="modal-header">
-                        <h4 class="modal-title" align="left">Contact Info</h4>
-                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                   
+                <div class="row">
+                 <div class="col-md-6" id="grey" align="center">  
+                <img src="img/profile.jpg" style="background: lightgrey;" width="300px"/>
                 </div>
-        <div class="modal-body" align="left">
-            <i class="material-icons">&#xe8c5;</i>0851234567 	<br>
-          <i class="material-icons">&#xe890;</i>taniagriffin12@hotmail.com <br>
-         
-<i class="material-icons">&#xe8a6;</i> <a href="https://www.linkedin.com/in/taniagriffin" target="_blank"> Linkedin</a><br>
-          <button class="btn btn-default" onClick="window.open('cv.docx')" type="submit"> 
-          <i class="fa fa-download"></i> Download CV</button>
-          <br><br><br>
+
+                <div class="col-md-6" id="grey"> 
+                <h2>About</h2>
+                <p align="left"> 4th year ICT Student at IT Tallaght. Have successfully completed many projects as an individual and as part of teams. Have experience developing and as a support engineer. I am currently looking for a graduate position in development for 2019 on completion of my Degree.</p>
+
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+    
+                            <!-- Modal content-->
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" align="left">Contact Info</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>  
+
+                                 <!--modal body-->
+                                <div class="modal-body" align="left">
+                                    <i class="material-icons">&#xe8c5;</i>0851234567 	<br>
+                                    <i class="material-icons">&#xe890;</i>taniagriffin12@hotmail.com <br>
+                                    <i class="material-icons">&#xe8a6;</i> <a href="https://www.linkedin.com/in/taniagriffin" target="_blank"> Linkedin</a><br>
+                                    <button class="btn btn-default" onClick="window.open('cv.docx')" type="submit"> 
+                                        <i class="fa fa-download"></i> Download CV
+                                    </button>
+                                <br><br><br>
 
        
        
-        <form class="form-horizontal" action="" method="post">
+                            <form class="form-horizontal" action="" method="post">
+                                     <!--name section of form-->
+                                <div class="form-group" align="left">
+                                    <label class="control-label col-sm-2" for="name">Name:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                                    </div>
+                                </div>
 
-     <div class="form-group" align="left">
-      <label class="control-label col-sm-2" for="name">Name:</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
-      </div>
-    </div>
+                                     <!--email section of form-->
+                                <div class="form-group" align="left">
+                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    </div>
+                                </div>
    
-   <div class="form-group" align="left">
-      <label class="control-label col-sm-2" for="email">Email:</label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-      </div>
-    </div>
-   
-   
-   <div class="form-group" align="left">
-      <label class="control-label col-sm-2" for="pwd">Message:</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="msg" placeholder="Enter message" name="message">
-      </div>
-    </div>
+                                         <!--message part of form-->
+                                <div class="form-group" align="left">
+                                    <label class="control-label col-sm-2" for="pwd">Message:</label>
+                                    <div class="col-sm-10">          
+                                        <input type="text" class="form-control" id="msg" placeholder="Enter message" name="message">
+                                    </div>
+                                </div>
   
-  
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default" onClick="alert('Thank you')"">Submit</button></div>
-      </div>
-  
+                                     <!--send button for contact form-->
+                                <div class="form-group">        
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-default" onClick="alert('Thank you')">Send</button></div>
+                                </div>
 
-        </form>
-       
-       
-      
+                            </form>
 
-        <div class="modal-footer">
-          <button id ="submit" button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <!--close button in modal footer-->
+                            <div class="modal-footer">
+                            <button id ="submit" button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
        
       
 
         
-        </div>  </div>  </div>
-      </div></div>
-              </div>
+        </div>  
+        </div>  
+        </div>
+      </div>
+      </div>
+        </div>
           </div>
             </div>
                  </div>             
@@ -175,276 +175,270 @@
     </div>
       </div>
   </div>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-  <div class="container">
-       <div class="row">
-   <div class="col-md-12"></div>
-         <div class="col-md-12"> 
-            <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-
-            <h2>Experience</h2> </div>
-         
-
-              <div class="col-md-6"> 
-                    <div class="col-md-12">
-             <a href="https://www.sap.com/index.html" target="_blank">  <img src="img/sap1.png" style="background: lightgrey;" width="150px" height="150px"/></a></div>
-                  <h3>SAP</h3>
+         <!--once you start to scroll down this button appears on right hand side to jump back to the top of the page-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                        
+                 <!--when experience clicked in nav bar it brings to here-->
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+             <div class="container">
+                <h2>Experience</h2> 
+                <div class="row">  <!--bootstrap grid system for page layout-->
+                <div class="col-md-6"> 
+                <div class="col-md-12">
+                <a href="https://www.sap.com/index.html" target="_blank">  <img src="img/sap1.png" style="background: lightgrey;" width="150px" height="150px"/></a></div>
+                <h3>SAP</h3>
                 <i>Jan 2018-August 2018</i>
                 <h4>Intern</h4>
                 <b>Responsibilities:</b>
                 <p>Product support role working as part of a global team to handle customer incidents. I worked with Customer Relations Management System specifically the Interaction centre, this was my core component. Working with SAP systems to process incidents created by customers and searching to provide solutions. Analysing problems and breaking them down to find the root cause of issue. Following strict procedures and meeting deadlines to achieve maximum customer satisfaction.</p>
-         </div>
-<div class="col-md-6"> 
-        <div class="col-md-12">
-            <img src="img/dns1.jpg" style="background: lightgrey;" width="150px" height="150px"/></div>
+            </div> 
 
-    <h3>Dublin Newspaper Supplies</h3>
-<i>2014 – 2018</i>
-				<h4>Assistant Manager</h4>
-<b>Responsibilities:</b>
-Showing staff what to do, supervising staff, checking quality of work, working to meet deadlines. Working with the public for promotional work. In charge of organizing stock, doing stock takes and making reports of stock quantity. Picking orders from stock and sending out. Receiving and checking in deliveries. I carried out administrative duties including creating and replying emails,  handling customer complaints, ordering stock, creating reports and working with Microsoft office packages.
+            <div class="col-md-6"> 
+            <div class="col-md-12">
+            <img src="img/dns1.jpg" style="background: lightgrey;" width="150px" height="150px"/></div>
+            <h3>Dublin Newspaper Supplies</h3>
+            <i>2014 – 2018</i>
+			<h4>Assistant Manager</h4>
+            <b>Responsibilities:</b>
+            Showing staff what to do, supervising staff, checking quality of work, working to meet deadlines. 
+            Working with the public for promotional work. In charge of organizing stock, doing stock takes and making reports of stock quantity. Picking orders from stock and sending out. Receiving and checking in deliveries. I carried out administrative duties including creating and replying emails,  handling customer complaints, ordering stock, creating reports and working with Microsoft office packages.
 
 
        </div>
-  </div>
-  </div>
-
-  <div class="container">
-        <div class="rowGrey">
-            <div class="col-md-12">
-              <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-              <h2>Education</h2>
-           
-              <div class="col-md-12">
-                  <a href="https://www.it-tallaght.ie" target="_blank" ><img src="img/itt.jpg" style="background: lightgrey;" width="150px" height="150px"/></a></div>
-             <br> <i>2015 – To date</i>
-              <h4>Institute of Technology Tallaght</h4>
-  
-                  BSc(Hons) in Computer Science<br>
-						     <table class="table table-hover">
-                   <thead>
+        </div>
+    </div>
+    <!--education section-->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="container">
+        <div class="rowGrey"> <!--everysecond section is grey just to give some dimentsion to the page-->
+        <h2>Education</h2>
+ 
+         <div class="col-md-12"> <!--below is link to image for ittd which opens in a new tab-->
+          <a href="https://www.it-tallaght.ie" target="_blank" ><img src="img/itt.jpg" style="background: lightgrey;" width="150px" height="150px"/></a></div>
+          <br> <i>2015 – To date</i>
+          <h4>Institute of Technology Tallaght</h4>
+            BSc(Hons) in Computer Science<br>
+			<table class="table table-hover">  <!--new table for years at itt-->
+                <thead>
                       <tr>
                         <th> Year</th>  <th>GPA</th><th>Breakdown</th>
                 </thead>
                 <tbody>
-                  <tr><td>Fourth</td><td> Pending</td><td>  </td></tr>
-            <tr>      <td> Third        </td>				<td>2.54</td><td> <button onclick="myFunction()" class="btn btn-info btn-lg">Modules</button>
-      <div id="third" style="display:none">
+                    <tr><td>Fourth</td><td> Pending</td><td>  </td></tr>
+                    <tr><td>Third</td><td>2.54</td><td> <button onclick="myFunction()" class="btn btn-info btn-lg">Modules</button>  <!--this button drops down to display all subjects and grades the script to make this work is down the end of this page-->
+                    <div id="third" style="display:none"> <!--this makes the content of the table hidden until the button is clicked-->
 
-      <div class="table-responsive" >
-        <table class ="table">
-          <thead>
-              <tr><th>3rd Year Modules Studied</th>
-              <th>Grades</th>
-              </tr>
-          </thead>
-
-       <tbody>  
-            <tr>
-              <td>Advanced Databases </td>
-              <td>B</td>
-          </tr>
+                        <div class="table-responsive" >
+                        <table class ="table">
+                        <thead>
+                            <tr><th>3rd Year Modules Studied</th> <!--heading on the table-->
+                                <th>Grades</th>
+                            </tr>
+                        </thead>
+                        <tbody>  
+                            <tr>
+                                <td>Advanced Databases </td> <!--rows on the table-->
+                                <td>B</td>
+                            </tr>
           
-          <tr>
-              <td>Operating Systems </td>
-              <td>B</td>
-           </tr>
+                            <tr>
+                                <td>Operating Systems </td>
+                                <td>B</td>
+                            </tr>
 
-            <tr>
-                <td>Cloud Services & Distributed Computing </td>
-                <td>B-</td>
-            </tr>
+                            <tr>
+                                <td>Cloud Services & Distributed Computing </td>
+                                <td>B-</td>
+                            </tr>
 
-            <tr>
-                <td>Data Structures & Algorithms</td>
-                <td>C+</td>
-            </tr>
+                            <tr>
+                                <td>Data Structures & Algorithms</td>
+                                <td>C+</td>
+                            </tr>
 
-            <tr>
-                <td>Data Analysis </td>
-                <td>C+</td>
-            </tr>
+                            <tr>
+                                <td>Data Analysis </td>
+                                <td>C+</td>
+                            </tr>
 
-            <tr>
-                <td>Web Application Development </td>
-                <td>D</td>
-             </tr>
+                            <tr>
+                                <td>Web Application Development </td>
+                                <td>D</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div></td>
 
-     </tbody>
-  </table>
-</div>
-</div></td>
-                  </tr>
+
+                  </tr>  
+                  
+                  <!--new row in main (outter)table-->
                   <tr>
-                    <td>Second	</td>		<td>	2.88</td><td>  <button onclick="myFunction2()" class="btn btn-info btn-lg">Modules</button>
-      <div id="second" style="display:none">      
-      <div class="table-responsive">
-          <table class ="table">
-             <thead>
-                  <tr><th>2nd Year Modules Studied</th>
-                      <th>Grades</th>
-                  </tr>
-              </thead>
+                    <td>Second	</td><td>2.88</td><td>  <button onclick="myFunction2()" class="btn btn-info btn-lg">Modules</button>
+                    <div id="second" style="display:none">      
+                    <div class="table-responsive">  <!--responsive table for smaller devices, table is nested-->
+                     <table class ="table">
+                         <thead>
+                             <tr><th>2nd Year Modules Studied</th>
+                                    <th>Grades</th>
+                             </tr>
+                        </thead>
 
-    <tbody> 
-          <tr>
-               <td>Networking 1 </td>
-                <td>A</td>
-          </tr>
+                        <tbody> 
+                            <tr>
+                                <td>Networking 1 </td>
+                                <td>A</td>
+                            </tr>
 
-          <tr>
-              <td>Networking 2  </td>
-              <td>B+</td>
-          </tr>
+                            <tr>
+                                <td>Networking 2  </td>
+                                <td>B+</td>
+                            </tr>
 
-          <tr>
-              <td>Discrete Mathematics 2 </td>
-              <td>B</td>
-          </tr>
+                            <tr>
+                                <td>Discrete Mathematics 2 </td>
+                                <td>B</td>
+                            </tr>
 
-          <tr>
-              <td>Web & Mobile Design & Development </td>
-              <td>B</td>
-          </tr>
+                            <tr> <!--table row-->
+                                <td>Web & Mobile Design & Development </td>
+                                <td>B</td>
+                            </tr>
 
-          <tr>
-              <td>Software Development 3  </td>
-              <td>B</td>
-          </tr>
+                            <tr>
+                                <td>Software Development 3  </td>
+                                 <td>B</td>
+                            </tr>
 
-           <tr>
-                <td>Information Security </td>
-                  <td>B</td>
-          </tr>
+                            <tr>
+                                <td>Information Security </td>
+                                <td>B</td>
+                            </tr>
 
-           <tr>
-                <td>Software Development 4  </td>
-                 <td>B-</td>
-           </tr>
+                            <tr>
+                                <td>Software Development 4  </td>
+                                <td>B-</td>
+                            </tr>
 
-            <tr>
-                <td>Project  </td>
-                <td>B-</td>
-            </tr>
+                            <tr>
+                                <td>Project  </td>
+                                <td>B-</td>
+                            </tr>
    
-              <tr>
-                 <td>Database Design & Programming </td>
-                  <td>C+</td>
-              </tr>
+                            <tr>
+                                <td>Database Design & Programming </td>
+                                <td>C+</td>
+                            </tr>
             
-            <tr>
-              <td>Software Quality Assurance & Testing  </td>
-              <td>C+</td>
-            </tr>
+                            <tr>
+                                <td>Software Quality Assurance & Testing  </td>
+                                <td>C+</td>
+                            </tr>
 
-            <tr>
-              <td>Object Oriented Analysis & Design </td>
-              <td>C+</td>
-            </tr>
+                            <tr>
+                                <td>Object Oriented Analysis & Design </td>
+                                <td>C+</td>
+                            </tr>
             
-            <tr>
-                <td>Management Science  </td>
-                  <td>C</td>
-            </tr>
+                            <tr>
+                                <td>Management Science  </td>
+                                <td>C</td>
+                            </tr>
  
-  </tbody>
-  </table>
-</div>
-</div>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
 
 </td>
                   </tr>
                   <tr>
                   <td>First </td> 				<td>3.58</td><td><button onclick="myFunction1()" class="btn btn-info btn-lg">Modules</button>
-      <div id="first" style="display:none">
-        <div class="table-responsive">
-            <table class ="table">
-             <thead>
-                <tr><th>1st Year Modules Studied</th>
-                    <th>Grades</th>
-                </tr>
-            </thead>
+                    <div id="first" style="display:none">
+                    <div class="table-responsive">
+                    <table class ="table">
+                         <thead>
+                                <tr><th>1st Year Modules Studied</th>
+                                    <th>Grades</th>
+                                </tr>
+                        </thead>
 
-            <tbody> 
-              <tr>
-                  <td>Business Information Systems </td>
-                  <td>A</td>
-              </tr>
+                        <tbody> 
+                                <tr>
+                                    <td>Business Information Systems </td>
+                                    <td>A</td>
+                                </tr>
 
-              <tr>
-                  <td>Learning to learn at 3rd Level  </td>
-                  <td>A</td>
-              </tr>
+                                <tr>
+                                    <td>Learning to learn at 3rd Level  </td>
+                                    <td>A</td>
+                                </tr>
 
-              <tr>
-                  <td>Software Development 1  </td>
-                  <td>A</td>
-              </tr>
+                                <tr>
+                                    <td>Software Development 1  </td>
+                                    <td>A</td>
+                                </tr>
 
-                <tr>
-                    <td>Social Media Communications </td>
-                     <td>A</td>
-                </tr>
+                                <tr>
+                                    <td>Social Media Communications </td>
+                                    <td>A</td>
+                                </tr>
 
-                <tr>
-                    <td>Database Fundamentals </td>
-                    <td>A</td>
-                </tr>
+                                <tr>
+                                    <td>Database Fundamentals </td>
+                                    <td>A</td>
+                                </tr>
 
-                <tr>
-                    <td>Discrete Mathematics 1 </td>
-                     <td>B+</td>
-                </tr>
+                                <tr>
+                                    <td>Discrete Mathematics 1 </td>
+                                    <td>B+</td>
+                                </tr>
 
-                 <tr>
-                       <td>Object Oriented System Analysis  </td>
-                        <td>B+</td>
-                  </tr>
+                                <tr>
+                                    <td>Object Oriented System Analysis  </td>
+                                    <td>B+</td>
+                                </tr>
                 
-                 <tr>
-                      <td>Software Development 2 </td>
-                      <td>B+</td>
-                  </tr>
+                                <tr>
+                                    <td>Software Development 2 </td>
+                                    <td>B+</td>
+                                </tr>
                   
-                  <tr>
-                      <td>Operating Systems </td>
-                       <td>B</td>
-                   </tr>
+                                <tr>
+                                    <td>Operating Systems </td>
+                                    <td>B</td>
+                                </tr>
                   
-                   <tr>
-                        <td>Computer Architecture </td>
-                        <td>B</td>
-                  </tr>
+                                <tr>
+                                    <td>Computer Architecture </td>
+                                    <td>B</td>
+                                </tr>
 
-                    <tr>
-                        <td>Fundament of Interface and Web </td>
-                        <td>B</td>
-                    </tr>
+                                <tr>
+                                    <td>Fundament of Interface and Web </td>
+                                    <td>B</td>
+                                </tr>
                   
-                    <tr>
-                       <td>Statistics </td>
-                        <td>B</td>
-                     </tr>
+                                <tr>
+                                    <td>Statistics </td>
+                                    <td>B</td>
+                                 </tr>
  
-
-
-  </tbody>
-  </table>
-</div>
-</div></td>
+                    </tbody>
+                 </table>
+            </div>
+        </div></td>
                   </tr>
                 </tbody>
-						     </table>
+				</table>
     
            <a href="http://www.libertiescollege.ie" target="_blank">  <div class="col-md-12"><img src="img/libo.jpeg" style="background: lightgrey;" width="150px" height="150px" /></a> </div>
-
- <div class="col-md-12"> 
-
-     <i>2013-2014</i>
-<h4>Liberties College	</h4>							
-QQI Level 5 Computer Systems and Networks<br>
-Cisco Certified
+            <div class="col-md-12"> 
+            <i>2013-2014</i>
+            <h4>Liberties College	</h4>							
+                QQI Level 5 Computer Systems and Networks<br>
+                Cisco Certified
 
 			     <table class="table table-hover">
                    <thead>
@@ -453,124 +447,110 @@ Cisco Certified
                 </thead>
                 <tbody>
                   
-            <tr>      <td> One </td> <td><button onclick="myFunctionOne()" class="btn btn-info btn-lg">Modules</button>
- 
-      <div id="one" style="display:none">
+                <tr>     
+                        <td> One </td> <td><button onclick="myFunctionOne()" class="btn btn-info btn-lg">Modules</button>
+                        <div id="one" style="display:none">
+                        <div class="table-responsive">
+                        <table class ="table">
+                            <thead>
+                                <tr><th>Modules Studied</th>
+                                    <th>Grades</th>
+                                 </tr>
+                            </thead>
 
-      <div class="table-responsive">
-        <table class ="table">
-          <thead>
-              <tr><th>Modules Studied</th>
-              <th>Grades</th>
-              </tr>
-          </thead>
-
-       <tbody>  
-            <tr>
-              <td>Web Authoring</td>
-              <td>Distinction</td>
-          </tr>
+                            <tbody>  
+                                <tr>
+                                    <td>Web Authoring</td>
+                                    <td>Distinction</td>
+                                </tr>
           
-          <tr>
-              <td>Internet</td>
-              <td>Distinction</td>
-           </tr>
+                                <tr>
+                                    <td>Internet</td>
+                                    <td>Distinction</td>
+                                </tr>
 
-            <tr>
-                <td>Networking Essentials</td>
-                <td>Distinction</td>
-            </tr>
+                                <tr>
+                                    <td>Networking Essentials</td>
+                                        <td>Distinction</td>
+                                </tr>
 
-            <tr>
-                <td>Work Experience</td>
-                <td>Distinction</td>
-            </tr>
+                                <tr>
+                                     <td>Work Experience</td>
+                                    <td>Distinction</td>
+                                </tr>
 
-            <tr>
-                <td>Computer Programming</td>
-                <td>Merit</td>
-            </tr>
+                                <tr>
+                                    <td>Computer Programming</td>
+                                    <td>Merit</td>
+                                </tr>
 
-            <tr>
-                <td>Communications</td>
-                <td>Merit</td>
-             </tr>
+                                <tr>
+                                    <td>Communications</td>
+                                    <td>Merit</td>
+                                </tr>
 
-              <tr>
-                <td> Introduction to Networks</td>
-                <td>Merit</td>
-             </tr>
+                                <tr>
+                                    <td> Introduction to Networks</td>
+                                    <td>Merit</td>
+                                </tr>
 
-              <tr>
-                <td>Computer Architecture</td>
-                <td>Merit</td>
-             </tr>
-
-           
-
-  </tbody>
-  </table>
-</div>
-</div></td>
+                                <tr>
+                                    <td>Computer Architecture</td>
+                                    <td>Merit</td>
+                                </tr>
+                            </tbody>
+                         </table>
+                    </div>
+                </div></td>
+                  
                   </tr>
                 </tbody>
-						     </table>
-                 
-
+				</table>
       </div>
-
-
 </div>   
 </div>
 </div></div></div>
-
-
-      <div class="container">
-          <div class="row">
-            <div class="col-md-12"> 
-              <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-              
-
-
-    <h2>Projects</h2> 
-    <div class="col-md-12"><img src="img/raffle.png" style="background: lightgrey;" width="150px" height="150px" float:right;/></div>
-<h3>LuxPrize</h3>
-    <i><b>Scope: </b></i>
-        <p>I am currently working on an iOS application for my 4th year project. The app is to raffle prizes. Any user can sign up and host a raffle selling any number of tickets at any cost. Once they are all sold the winner will be chosen at random and both winner & seller will be notified.</p>
-    <br><i><b>Technologies & Tools Used:</b> </i><p>Xamarin, C#, Azure, JS.</p><br>
+             <!--project section-->
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+            <div class="container">
+            <h2>Projects</h2> 
+            <div class="row">
+            <div class="col-md-12"><img src="img/raffle.png" style="background: lightgrey;" width="150px" height="150px" float:right;/></div>
+            <h3>LuxPrize</h3>
+            <i><b>Scope: </b></i>
+            <p>I am currently working on an iOS application for my 4th year project. The app is to raffle prizes. Any user can sign up and host a raffle selling any number of tickets at any cost. Once they are all sold the winner will be chosen at random and both winner & seller will be notified.</p>
+            <br><i><b>Technologies & Tools Used:</b> </i><p>Xamarin, C#, Azure, JS.</p><br>
        
-       <button id="expand-btn" button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Show More</button>
-  <div id="demo" class="collapse">
-        <div class="col-md-12"><img src="img/quizapp.png" style="background: lightgrey;" width="150px" height="150px" float:right;/></div>
-<h3>QuizzApp</h3>
-       <b><i>Scope: </b></i>
+        <!--button to show/hide more info in this section-->
+            <button id="expand-btn" button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Show More</button>
+                <div id="demo" class="collapse">
+                <div class="col-md-12"><img src="img/quizapp.png" style="background: lightgrey;" width="150px" height="150px" float:right;/></div>
+                <h3>QuizzApp</h3>
+                <b><i>Scope: </b></i>
                   <p>Group project with 5 other interns on a website for SAP that can enable users to create quizzes for fellow colleagues to take The quiz master creates a quiz and receives a code, this code is then entered by the person taking the quiz. The user can view their score and wrong answers at the end. The quiz master can view analytics on each quiz.</p>           
                   <br>
                   <i><b>Technologies & Tools Used: </b></i><p>Sails framework, node JS, EJS, html, css and mysql.</p><br>
   
                   <div class="col-md-12"><img src="img/gym.jpg" style="background: lightgrey;" width="150px" height="150px" float:right;/></div>
-<h3>D Fitness</h3>
- <i><b>Scope: </b></i>
+                    <h3>D Fitness</h3>
+                    <i><b>Scope: </b></i>
                   <p>A project with two other members in which we researched, designed and developed a website for a personal trainer. The main function was to have a client booking system. This enabled multiple users to create an account, have login details, have additional functionality to the general user such as book and appointment with the trainer, record and view their own progress. There was an administrative login for the trainers to sign up new members, delete members, track, view or delete clients progress, make and view appointments and update the timetable. </p>
                   <b><i>Technologies & Tools Used: </b></i><p>Play framework, java, html, css and sql.</p>
              </div>
-    
               </div>
   </div>
 </div>
 
 
 
-       
-
-   <div class="container">
+        <!--skills section -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="container">
           <div class="rowGrey">
+            <h2>IT Skills</h2>
             <div class="col-md-12"> 
 
-              <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-                 <h2>IT Skills</h2>
-           
-                  <ul>
+                  <ul> <!--unordered list of skills-->
                     <li>Capable of creating database tables and querying using SQL commands</li>
                     <li>Can design and develop websites using bootstrap, html, javascript and css</li>
                     <li>Can design and code programs using C#, C++, Java, HTML, SQL</li>
@@ -583,13 +563,12 @@ Cisco Certified
           </div>
     </div>
 
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12"> 
-
-              <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-              <h2>Interests</h2>
+             <!--interests section-->
+         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+            <div class="container">
+            <h2>Interests</h2>
+            <div class="row">
+            <div class="col-md-12">     
               <p>Volunteered at SAP on various workshops to assist in teaching & mentoring 6th class students and also 4th year secondary school students. I really enjoyed this getting to present to the students and helping them to learn about different topics such as binary, ip addressing, subnets, scratch tutorials and more.
                I was involved in hosting an ERP simulation event at UCD for master students. At this event I got to teach them how to use the solftware to compete with each other for the highest sales of cereal.
                this was a real time simulator demonstrating how real businesses apply this software to their companies.
@@ -600,6 +579,8 @@ Cisco Certified
 
 
 <script>
+
+//method for showing/hiding tables by id thats why they are numbered
 function myFunction() {
     var x = document.getElementById("third");
     if (x.style.display === "none") {
@@ -611,7 +592,7 @@ function myFunction() {
 }
 
 
-
+//method for showing/hiding tables by id thats why they are numbered
 function myFunction2() {
     var x = document.getElementById("second");
     if (x.style.display === "none") {
@@ -620,7 +601,7 @@ function myFunction2() {
         x.style.display = "none";
     }
 }
-
+//method for showing/hiding tables by id thats why they are numbered
 function myFunction1() {
     var x = document.getElementById("first");
     if (x.style.display === "none") {
@@ -630,6 +611,7 @@ function myFunction1() {
     }
 }
 
+//method for showing/hiding tables by id thats why they are numbered
 function myFunctionOne() {
     var x = document.getElementById("one");
     if (x.style.display === "none") {
@@ -656,6 +638,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+//method for showing more then the button changes to show less
 $('#expand-btn').click(function(){
   if ($('#expand-btn').attr('aria-expanded') === "true") 
   {
@@ -665,7 +648,7 @@ $('#expand-btn').click(function(){
   {
     $('#expand-btn').html('Show Less');   
   }
-})
+})//function for google search bar
       var domainroot=""
       function Gsitesearch(curobj){
       curobj.q.value=""+domainroot+" "+curobj.qfront.value
