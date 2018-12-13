@@ -50,7 +50,7 @@
             </li>
        <li>  <div class="search-container">
             <form class="form-inline" action="https://www.google.com/search"
-            method="GET" target="_blank" onsubmit="googleSearch(this)">
+            method="GET" target="_blank" onsubmit="Gsitesearch(this)">
             
             <input name="q" type="hidden">
             
@@ -63,6 +63,10 @@
             
             </form>
             
+
+          
+
+
   </div></li>
         </ul>
       </div>
@@ -109,8 +113,11 @@
             <i class="material-icons">&#xe8c5;</i>0851234567 	<br>
           <i class="material-icons">&#xe890;</i>taniagriffin12@hotmail.com <br>
          
-<i class="material-icons">&#xe8a6;</i> <a href="https://www.linkedin.com/in/taniagriffin" target="_blank"> Linkedin</a><br><br><br>
-       
+<i class="material-icons">&#xe8a6;</i> <a href="https://www.linkedin.com/in/taniagriffin" target="_blank"> Linkedin</a><br>
+          <button class="btn btn-default" onClick="window.open('cv.docx')" type="submit"> 
+          <i class="fa fa-download"></i> Download CV</button>
+          <br><br><br>
+
        
        
         <form class="form-horizontal" action="" method="post">
@@ -151,6 +158,10 @@
 
         <div class="modal-footer">
           <button id ="submit" button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       
+      
+
+        
         </div>  </div>  </div>
       </div></div>
               </div>
@@ -168,7 +179,7 @@
 
   <div class="container">
        <div class="row">
-
+   <div class="col-md-12"></div>
          <div class="col-md-12"> 
             <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
 
@@ -650,6 +661,12 @@ $('#expand-btn').click(function(){
     $('#expand-btn').html('Show Less');   
   }
 })
+      var domainroot=""
+      function Gsitesearch(curobj){
+      curobj.q.value=""+domainroot+" "+curobj.qfront.value
+      }
+  
+
 </script>
 </body>
 </html>
